@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #6366f1;
+  --secondary: #818cf8;
+  --accent: #4f46e5;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background: #0a0b0f;
+  color: #ffffff;
+}
+
+.crypto-gradient {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+.glow {
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.grid-bg {
+  background-image: radial-gradient(rgba(99, 102, 241, 0.1) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+.swiper-pagination-bullet {
+  background: var(--primary) !important;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #6366f1, #818cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
